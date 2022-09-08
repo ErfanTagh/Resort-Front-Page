@@ -1,0 +1,199 @@
+nav {
+    display: flex; /* 1 */
+    justify-content: space-between; /* 2 */
+    padding: 1rem 2rem; /* 3 */
+    height: 40px;
+    align-items: center;
+}
+
+nav ul {
+    display: flex; /* 5 */
+    list-style: none;
+    margin-right: 100px;
+
+}
+
+
+
+.btn1{
+
+    display: inline-block;
+    background-color: black;
+    padding: 20px;
+    width: 80px;
+    border-radius: 2px;
+    height: 20px;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.btn1:hover{
+
+
+    background-color: white;
+    color: black;
+
+}
+
+
+.btn2:hover{
+
+
+    background-color: white;
+    color: black;
+
+}
+
+
+
+.btn2{
+
+
+    display: inline-block;
+    padding: 20px;
+    width: 78px;
+    border-radius: 2px;
+    height: 18px;
+    align-items: center;
+    text-align: center;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    margin-left: 8px;
+
+
+}
+
+.nav-image{
+
+    width: 30px;
+    height: 30px;
+
+}
+
+.container{
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+
+}
+
+
+.overview{
+
+
+    color: white;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,72,223,1) 0%, rgba(255,255,255,1) 100%);
+
+
+}
+.main-content{
+    flex:1;
+    margin-left: 50px;
+}
+.main-image-div{
+
+    align-self: stretch;
+    margin-left: 60px;
+    flex:2;
+    height: 300px;
+}
+
+.main-image{
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    margin-left: 80px;
+
+}
+
+nav li {
+    padding-left: 1rem; /* 7! */
+
+}
+
+nav a {
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    nav ul {
+        flex-direction: column;
+
+    }
+    nav li {
+
+    }
+
+    .nav-image{
+
+        width: 30px;
+        height: 30px;
+        margin-right: 50px;
+        align-items: center;
+
+    }
+
+}
+
+
+.offers-div{
+    margin-top: 10%;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    align-content: center;
+    justify-content: space-around;
+
+}
+
+.offers-div-item1{
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+
+.offers-div-item2{
+
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.offers-div-item3{
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
+
+
+.offers-img {
+
+    width: 150px;
+    height: 90px;
+
+}
